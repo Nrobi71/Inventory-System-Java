@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="955.0" style="-fx-background-color: gainsboro;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.AddProductScreenController">
+   <children>
+      <Label layoutX="30.0" layoutY="30.0" text="Add Product">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="755.0" layoutY="450.0" minHeight="25.0" mnemonicParsing="false" onAction="#saveAddProductButton" prefWidth="70.0" text="Save" />
+      <Button layoutX="840.0" layoutY="450.0" minHeight="25.0" mnemonicParsing="false" onAction="#cancelAddProductButton" prefWidth="70.0" text="Cancel" />
+      <TextField fx:id="addProductId" alignment="CENTER" layoutX="150.0" layoutY="115.0" prefHeight="35.0" prefWidth="170.0" promptText="Auto Gen - Disabled" style="-fx-border-color: gray; -fx-background-color: gainsboro;" />
+      <TextField fx:id="addProductName" layoutX="150.0" layoutY="165.0" prefHeight="35.0" prefWidth="170.0" style="-fx-border-color: gray;" />
+      <TextField fx:id="addProductInv" layoutX="150.0" layoutY="215.0" prefHeight="35.0" prefWidth="170.0" style="-fx-border-color: gray;" />
+      <TextField fx:id="addProductPrice" layoutX="150.0" layoutY="265.0" prefHeight="35.0" prefWidth="170.0" style="-fx-border-color: gray;" />
+      <TextField fx:id="addProductMax" layoutX="150.0" layoutY="315.0" prefHeight="35.0" prefWidth="65.0" style="-fx-border-color: gray;" />
+      <TextField fx:id="addProductMin" layoutX="325.0" layoutY="315.0" prefHeight="35.0" prefWidth="65.0" style="-fx-border-color: gray;" />
+      <Label layoutX="50.0" layoutY="125.0" text="ID" />
+      <Label layoutX="50.0" layoutY="175.0" text="Name" />
+      <Label layoutX="50.0" layoutY="225.0" text="Inv" />
+      <Label layoutX="50.0" layoutY="275.0" text="Price" />
+      <Label layoutX="50.0" layoutY="325.0" text="Max" />
+      <Label layoutX="255.0" layoutY="325.0" text="Min" />
+      <TableView fx:id="addPartToProductTable" layoutX="425.0" layoutY="80.0" prefHeight="125.0" prefWidth="485.0">
+         <columns>
+            <TableColumn fx:id="partIdCol" prefWidth="75.0" text="Part ID" />
+            <TableColumn fx:id="partNameCol" prefWidth="150.0" text="Part Name" />
+            <TableColumn fx:id="partInventoryCol" prefWidth="135.0" text="Inventory Level" />
+            <TableColumn fx:id="partCostCol" prefWidth="125.0" text="Price per Unit" />
+         </columns>
+      </TableView>
+      <Button layoutX="542.0" layoutY="25.0" minHeight="25.0" mnemonicParsing="false" onAction="#searchProductButton" prefWidth="70.0" text="Search" />
+      <TextField fx:id="searchProductTextField" alignment="CENTER" layoutX="625.0" layoutY="25.0" onKeyPressed="#searchProductKeyPressed" prefHeight="31.0" prefWidth="287.0" promptText="Search by Name or Id" />
+      <Button alignment="CENTER" layoutX="840.0" layoutY="215.0" minHeight="25.0" mnemonicParsing="false" onAction="#addPartToProductButton" prefWidth="70.0" text="Add" />
+      <TableView fx:id="deletePartFromProductTable" layoutX="425.0" layoutY="255.0" prefHeight="125.0" prefWidth="485.0">
+         <columns>
+            <TableColumn fx:id="assocPartIdCol" prefWidth="75.0" text="Part ID" />
+            <TableColumn fx:id="assocPartNameCol" prefWidth="150.0" text="Part Name" />
+            <TableColumn fx:id="assocPartInvCol" prefWidth="135.0" text="Inventory Level" />
+            <TableColumn fx:id="assocPartCostCol" prefWidth="125.0" text="Proce per Unit" />
+         </columns>
+      </TableView>
+      <Button layoutX="706.0" layoutY="390.0" minHeight="25.0" mnemonicParsing="false" onAction="#deletePartFromProductButton" prefHeight="31.0" prefWidth="204.0" text="Remove Associated Part" />
+   </children>
+</AnchorPane>
