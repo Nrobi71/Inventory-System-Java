@@ -5,8 +5,8 @@ INTRODUCTION:
 
 A JavaFX graphical program that simulates an inventory management system with the ability to add, modify and delete both parts and products, while also incorporating parts into products.
 
-Project Software: JDK 17 - watch QSG_Installing_JDK(PC)
-Intellij 2021.1.1 Windows SDK x64
+Project Software: JDK 17 - watch QSG_Installing_JDK(PC),
+Intellij 2021.1.1 Windows SDK x64,
 JavaFX 17.0.1 Windows x64
 
 Code Location: src file >> Main, Model, and ViewController
