@@ -1,7 +1,7 @@
 # Inventory System C482 Software I: Object-Oriented Application Development
 
 
-INTRODUCTION:
+## INTRODUCTION:
 
 A JavaFX graphical program that simulates an inventory management system with the ability to add, modify and delete both parts and products, while also incorporating parts into products.
 
@@ -12,14 +12,14 @@ JavaFX 17.0.1 Windows x64
 Code Location: src file >> Main, Model, and ViewController
 
 
-SCENARIO:
+## SCENARIO:
 
 I'm working for a small manufacturing organization that has outgrown its current inventory system. Members of the organization have been using a spreadsheet program to manually enter inventory additions, deletions, and other data from a paper-based system but would now like me to develop a more sophisticated inventory program.
 
 
-REQUIREMENTS:
+## REQUIREMENTS:
 
-I.  User Interface
+### I.  User Interface
 
 A.  Create a JavaFX application with a graphical user interface (GUI) based on the attached “Software 1 GUI Mock-Up.” You may use JavaFX with or without FXML to create your GUI, or you may use Scene Builder to create your FXML file; use of Swing is not permitted. The user interface (UI) should closely match the organization of the GUI layout and contain all UI components (buttons, text fields, etc.) in each of the following GUI mock-up forms:
 
@@ -44,7 +44,7 @@ B.  Provide Javadoc comments for each class member throughout the code, and incl
 Note: For these comments to accurately export to the Javadoc comments, please add the logical and runtime error comments in the method header declaration comments where the error that was corrected occurred, and include the future enhancement comments in the comments of the main class. Please start these comments with “RUNTIME ERROR” or “FUTURE ENHANCEMENT” as applicable.
 
 
-II.  Application
+### II.  Application
 
 C.  Create classes with data and logic that map to the UML class diagram and include the supplied Part class provided in the attached “Part.java.” Do not alter the provided class. Include all the classes and members as shown in the UML diagram. Your code should demonstrate the following:
 
